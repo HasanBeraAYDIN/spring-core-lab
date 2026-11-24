@@ -3,6 +3,7 @@ package com.hasko.springcorelab;
 import com.hasko.springcorelab.ders2.OrderService;
 import com.hasko.springcorelab.ders3.Counter;
 import com.hasko.springcorelab.ders3.DatabaseConnection;
+import com.hasko.springcorelab.ders3.PaymentClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,6 +28,8 @@ public class SpringCoreLabApplication {
 
 
        System.out.println("--------UYGULAMA KAPANIYOR!----------");
+        PaymentClient p =context.getBean(PaymentClient.class);
+        p.pay(100);
        context.close();
     }
 
