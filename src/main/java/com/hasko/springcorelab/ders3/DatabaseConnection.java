@@ -2,10 +2,8 @@ package com.hasko.springcorelab.ders3;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Scope("prototype")
 @Component
 public class DatabaseConnection {
     public DatabaseConnection(){

@@ -8,6 +8,6 @@ public class PaymentClient {
         System.out.println("PaymentClient oluşturuldu: "+apiUrl);
     }
     public void pay(int amount){
-        System.out.println(amount + "TL odedni ! ");
+        System.out.println(amount + " TL odendi ! ");
     }
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 @Component
 public class Counter {
-    public int count;
+    private int count;
     public Counter(){
         count = 0 ;
     }
