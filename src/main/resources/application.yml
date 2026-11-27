@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-core-lab
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+app:
+  name: Hasko Kitapligi
